@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <title>Frontend Mentor | E-commerce product page</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.1/css/boxicons.min.css"
+      integrity="sha512-nOk7sj5T6Zi3Ond5VHhc+L4WHvRuRhV/cOcWWDl2mOyTetiIfuv56UJzD0yYhz9Kqwk1PpU0/PX5+qpX43hVWg=="crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+
+  <body>
+    <header class="animate__animated animate__fadeInDown">
+      <div class="container navbar">
+        <div class="navbar-left">
+          <div class="mobile-nav">
+            <img src="./images/icon-menu.svg" alt="Menu">
+          </div>
+          <div class="logo">
+            <img src="./images/logo.svg" alt="LOGO">
+          </div>
+          <nav class="navbar-left-links">
+            <ul>
+              <li class="link"><a href="#">Collections</a></li>
+              <li class="link"><a href="#">Men</a></li>
+              <li class="link"><a href="#">Women</a></li>
+              <li class="link"><a href="#">About</a></li>
+              <li class="link"><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <nav class="navbar-mobile-view">
+            <ul>
+              <li class="exit"><i class='bx bx-x headline'></i></li>
+              <li class="link"><a href="#">Collections</a></li>
+              <li class="link"><a href="#">Men</a></li>
+              <li class="link"><a href="#">Women</a></li>
+              <li class="link"><a href="#">About</a></li>
+              <li class="link"><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="navbar-right">
+          <div class="cart">
+            <img  src="./images/icon-cart.svg" alt="Cart">
+            <div class="cart-inv">
+              <div class=" inventory btn">Cart</div>
+              <hr>
+              <div class="items">
+                <div class="empty link">Your cart is empty</div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="profile">
+            <img src="./images/image-avatar.png" alt="Avatar">
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="mobile-section">
+          <div class="arrow left">
+            <i class='bx bxs-chevron-left'></i>
+          </div>
+          <div class="arrow right">
+            <i class='bx bxs-chevron-right'></i>
+          </div>
+        </div>
+        <div class="container hold">
+          <div class="img-desk animate__animated animate__fadeInLeft">
+            <img class="main-pic" src="./images/image-product-1.jpg" alt="Main">
+            <div class="preview">
+              <div class="box clicked">
+                <img src="./images/image-product-1-thumbnail.jpg" alt="img">
+              </div>
+              <div class="box">
+                <img src="./images/image-product-2-thumbnail.jpg" alt="img">
+              </div>
+              <div class="box">
+                <img src="./images/image-product-3-thumbnail.jpg" alt="img">
+              </div>
+              <div class="box">
+                <img src="./images/image-product-4-thumbnail.jpg" alt="img">
+              </div>
+            </div>
+          </div>
+
+          <div class="buy-section animate__animated animate__fadeInRight">
+            <div class="paragraph-s title">SNEAKER COMPANY</div>
+            <h1 class="headline">Fall Limited Edition Sneakers</h1>
+            <p class="paragraph">These low-profile sneakers are your perfect
+              casual wear companion. Featuring a durable rubber outer sole,
+              they’ll withstand everything the weather can offer.</p>
+            <div class="price-box">
+              <div class="top">
+                <div class="headline">$125.00</div>
+                <div class="paragraph">50%</div>
+              </div>
+              <div class="bot">
+                <del class="link discount">$250.00</del>
+              </div>
+            </div>
+
+            <div class="add-buttons">
+              <div class="count" id="count">
+                <div class="link display">1</div>
+                <i class='bx bx-plus plus'></i>
+                <i class='bx bx-minus minus'></i>
+              </div>
+              <a href="#" class="add full-btn btn">
+                <i class='bx bx-cart-alt'></i>
+                Add to cart
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
+
+
+
+<!-- 
+Collections
+Men
+Women
+About
+Contact
+
+Sneaker Company
+
+Fall Limited Edition Sneakers
+
+
+
+$125.00
+50%
+$250.00
+
+0
+Add to cart
+
+<div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="#">Your Name Here</a>.
+</div> -->

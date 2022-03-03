@@ -1,0 +1,181 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    min-height: 7rem;
+    padding: 0 2rem;
+    @include media(tablet){
+        border-bottom: 1px rgba(182, 188, 200, 0.2) solid;
+    }
+
+
+
+
+    &-mobile-view{
+        display: none;
+        
+    }
+
+    &-left{
+        display: flex;
+        gap: 1.5rem;
+        align-items: center;
+        @include media(tablet){
+            gap: 3rem;
+        }
+        .mobile-nav{
+            &:hover{
+                cursor: pointer;
+            }
+            @include media(tablet){
+                display: none;
+            }
+        }
+
+        &-links{
+            display: none;
+            @include media(tablet){
+                display: block;
+                ul{
+                    display: flex;
+                    gap: 2rem;
+                    li{
+                        a{
+                            display: flex;
+                            align-items: center;
+                            min-height: 7rem;
+                            color: $Very-vark-blue;
+                            position: relative;
+                            transition: 1s;
+                            &:hover{
+                                &::after{
+                                    content: '';
+                                    position: absolute;
+                                    width: 100%;
+                                    height: .5rem;
+                                    background-color: $Orange;
+                                    bottom: 0;
+                                    left: 0;
+                                    animation: leftoright ease-in-out .3s;
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+
+    &-right{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        
+
+        .pointer{
+            &::before{
+                display: none;
+            }
+            
+        }
+
+        .cart{
+            width: 3rem;
+            
+            @include media(tablet){
+                position: relative;
+            }
+            img{
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+            .cart-inv{
+                display: none;
+                position: absolute;
+                background-color: white;
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                width: 35rem;
+                height: 20rem;
+                border-radius: 1rem;
+                z-index: 99;
+                top: 8rem;
+                left: 50%;
+                transform: translateX(-50%);
+                transition: 1s;
+                @include media(tablet){
+                    top: 150%;
+                    left: 50%;
+                }
+
+                .inventory{
+                    padding: 2rem;
+                }
+
+                hr{
+                    border: rgba(182, 188, 200, 0.2) 1px solid;
+                }
+
+                .empty{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-weight: 700;
+                    height: 13rem;
+                    color: $Dark-grayish-blue;
+                }
+
+                .checkout{
+                    height: 13rem;
+                    padding: 1rem;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    gap: 1rem;
+                    .description{
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        
+                        .item-photo{
+                            width: 5rem;
+                            img{
+                                border-radius: .5rem;
+                            }
+                        }
+                        .item-price{
+                            .q-p{
+                                display: flex;
+                                gap: 1rem;
+                            }
+                        }
+    
+                    }
+
+                    .checkout-btn{
+                        color: white;
+                        background-color: $Orange;
+                        border-radius: 1rem;
+                        height: 5rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+
+            }
+        }
+        
+        .profile{
+            width: 3em;
+            img{
+                border-radius: 50%;
+                &:hover{
+                    transition: .5s;
+                    border: 2px  $Orange solid;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
